@@ -6,13 +6,15 @@ $margin-left: 10%;
 $myOpacity:1;
 $label-bottom: 15px;
 $placeholder-bottom: 35px;
+$page-height: 768px;
+
 
 /*----defining mixin for the images---------*/
 @mixin image-properties($width, $height, $image-path){
     background: transparent url($image-path) 0% 0% no-repeat padding-box;
     width:$width;
     height:$height;
-    margin-left: $margin-left;
+   
 }
 
 /*-----defining mixin for the headers and labels-----**/
@@ -33,7 +35,7 @@ $placeholder-bottom: 35px;
 /*---defining mixin for the border properties-----*/
 @mixin boarder-properties{
     border:none;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #EBEBEB;
     opacity: $myOpacity;
     width: 444px;
 }
@@ -43,11 +45,18 @@ $placeholder-bottom: 35px;
     top: 0px;
     left: 0px;
     width: 1366px;
-    height: 768px;
+    height: $page-height;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: $myOpacity;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+/*----styling the conatiner of the form----*/
+.form_conatiner{
+    width: 783px;
+    height: $page-height;
+
 }
 
 /*-----styling the logo in the form_container----*/
@@ -55,6 +64,7 @@ $placeholder-bottom: 35px;
     @include image-properties(76px, 76px , $logo-image);
     margin-top: 81px;
     margin-bottom: 31px;
+    margin-left: $margin-left;
 }
 
 /*------styling the header of the page-----*/
@@ -62,6 +72,7 @@ $placeholder-bottom: 35px;
     @include text-properties(40px, 200, $font-familyman, 52px);
    margin-bottom: 30px;
 }
+
 
 /*--------styling the labels------*/
 .form_questions{
@@ -76,7 +87,7 @@ $placeholder-bottom: 35px;
     margin-bottom:$placeholder-bottom;
 
     &::placeholder {
-        color: #ebebeb; // Change the placeholder text color
+        color: #DBDBDB; // Change the placeholder text color
     }
 }
 
@@ -95,4 +106,16 @@ $placeholder-bottom: 35px;
     margin-top: 20px;
     margin-bottom: 80px;
     border:none;
+}
+
+/*----styling the conatiner of the image---*/
+.image_conatiner{
+    width: 583px;
+    height:$page-height;
+}
+
+/*----styling the page image----*/
+.page_img{
+    @include image-properties(583px, 768px , '../Images/jordan.png');
+    background-size: cover;
 }
