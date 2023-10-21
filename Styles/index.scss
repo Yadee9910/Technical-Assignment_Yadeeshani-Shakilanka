@@ -1,7 +1,11 @@
+$mycolor:#05253C;
+$font-familyman: 'manrope';
+$font-familyplus: 'Plus Jakarta Sans';
 $logo-image:'../Images/logo.png';
 $margin-left: 10%;
+$myOpacity:1;
 
-/*----defining mixin for the images----*/
+/*----defining mixin for the images---------*/
 @mixin image-properties($width, $height, $image-path){
     background: transparent url($image-path) 0% 0% no-repeat padding-box;
     width:$width;
@@ -9,14 +13,28 @@ $margin-left: 10%;
     margin-left: $margin-left;
 }
 
-/*------styling the full page-------*/
+/*-----defining mixin for the headers and labels-----**/
+@mixin text-properties($font-size, $font-weight, $font-family, $line-height){
+    font-size: $font-size;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    line-height: $line-height;
+    text-align: left;
+    margin-left: $margin-left;
+    color: $mycolor;
+    letter-spacing: 0px;
+    opacity: $myOpacity;
+}
+/*------styling the full page-------------*/
 .page_container{
     top: 0px;
     left: 0px;
     width: 1366px;
     height: 768px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
+    opacity: $myOpacity;
     display:flex;
     flex-direction: column;
 }
@@ -26,4 +44,10 @@ $margin-left: 10%;
     @include image-properties(76px, 76px , $logo-image);
     margin-top: 81px;
     margin-bottom: 31px;
+}
+
+/*------styling the header of the page-----*/
+.page_header{
+    @include text-properties(40px, 200, $font-familyman, 52px);
+    margin-bottom: 30px;
 }

@@ -1,5 +1,6 @@
-/*----defining mixin for the images----*/
-/*------styling the full page-------*/
+/*----defining mixin for the images---------*/
+/*-----defining mixin for the headers and labels-----**/
+/*------styling the full page-------------*/
 .page_container {
   top: 0px;
   left: 0px;
@@ -19,4 +20,20 @@
   margin-left: 10%;
   margin-top: 81px;
   margin-bottom: 31px;
+}
+
+/*------styling the header of the page-----*/
+.page_header {
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  font-family: "manrope";
+  line-height: 52px;
+  text-align: left;
+  margin-left: 10%;
+  color: #05253C;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=index.css.map */
