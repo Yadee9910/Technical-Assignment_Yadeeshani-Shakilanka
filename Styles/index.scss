@@ -4,6 +4,8 @@ $font-familyplus: 'Plus Jakarta Sans';
 $logo-image:'../Images/logo.png';
 $margin-left: 10%;
 $myOpacity:1;
+$label-bottom: 15px;
+$placeholder-bottom: 35px;
 
 /*----defining mixin for the images---------*/
 @mixin image-properties($width, $height, $image-path){
@@ -14,7 +16,7 @@ $myOpacity:1;
 }
 
 /*-----defining mixin for the headers and labels-----**/
-@mixin text-properties($font-size, $font-weight, $font-family, $line-height){
+@mixin text-properties($font-size, $font-weight, $font-family, $line-height) {
     font-size: $font-size;
     font-style: normal;
     font-variant: normal;
@@ -27,6 +29,15 @@ $myOpacity:1;
     letter-spacing: 0px;
     opacity: $myOpacity;
 }
+
+/*---defining mixin for the border properties-----*/
+@mixin boarder-properties{
+    border:none;
+    border-bottom: 1px solid #ebebeb;
+    opacity: $myOpacity;
+    width: 444px;
+}
+
 /*------styling the full page-------------*/
 .page_container{
     top: 0px;
@@ -49,5 +60,39 @@ $myOpacity:1;
 /*------styling the header of the page-----*/
 .page_header{
     @include text-properties(40px, 200, $font-familyman, 52px);
-    margin-bottom: 30px;
+   margin-bottom: 30px;
+}
+
+/*--------styling the labels------*/
+.form_questions{
+    @include text-properties(16px, medium, $font-familyplus, 28px);  
+    margin-bottom:  $label-bottom; 
+}
+
+/*----styling the placeholders and the borders-----*/
+.form_inputs{
+    @include text-properties(12px, medium, $font-familyplus, 24px);
+    @include boarder-properties;
+    margin-bottom:$placeholder-bottom;
+
+    &::placeholder {
+        color: #ebebeb; // Change the placeholder text color
+    }
+}
+
+/*----styling email address and Address labels---*/
+.form_questions_different{
+    @extend .form_questions;
+    $label-bottom: 18px;
+    margin-bottom: $label-bottom;    
+}
+
+/*---styling the submit button----*/
+.button{
+    @include text-properties(16px, 600, $font-familyplus, 32px);
+    background: #FFDC47 0% 0% no-repeat padding-box;
+    padding:12px 56px 12px 56px ;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border:none;
 }

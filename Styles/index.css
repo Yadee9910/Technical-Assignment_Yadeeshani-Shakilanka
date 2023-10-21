@@ -1,5 +1,6 @@
 /*----defining mixin for the images---------*/
 /*-----defining mixin for the headers and labels-----**/
+/*---defining mixin for the border properties-----*/
 /*------styling the full page-------------*/
 .page_container {
   top: 0px;
@@ -36,4 +37,68 @@
   letter-spacing: 0px;
   opacity: 1;
   margin-bottom: 30px;
+}
+
+/*--------styling the labels------*/
+.form_questions, .form_questions_different {
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: "Plus Jakarta Sans";
+  line-height: 28px;
+  text-align: left;
+  margin-left: 10%;
+  color: #05253C;
+  letter-spacing: 0px;
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+/*----styling the placeholders and the borders-----*/
+.form_inputs {
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: "Plus Jakarta Sans";
+  line-height: 24px;
+  text-align: left;
+  margin-left: 10%;
+  color: #05253C;
+  letter-spacing: 0px;
+  opacity: 1;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  opacity: 1;
+  width: 444px;
+  margin-bottom: 35px;
+}
+.form_inputs::placeholder {
+  color: #ebebeb;
+}
+
+/*----styling email address and Address labels---*/
+.form_questions_different {
+  margin-bottom: 18px;
+}
+
+/*---styling the submit button----*/
+.button {
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans";
+  line-height: 32px;
+  text-align: left;
+  margin-left: 10%;
+  color: #05253C;
+  letter-spacing: 0px;
+  opacity: 1;
+  background: #FFDC47 0% 0% no-repeat padding-box;
+  padding: 12px 56px 12px 56px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  border: none;
 }/*# sourceMappingURL=index.css.map */
