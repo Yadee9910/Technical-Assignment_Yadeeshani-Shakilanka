@@ -1,1 +1,22 @@
-/*# sourceMappingURL=index.css.map */
+/*----defining mixin for the images----*/
+/*------styling the full page-------*/
+.page_container {
+  top: 0px;
+  left: 0px;
+  width: 1366px;
+  height: 768px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/*-----styling the logo in the form_container----*/
+.Logo {
+  background: transparent url("../Images/logo.png") 0% 0% no-repeat padding-box;
+  width: 76px;
+  height: 76px;
+  margin-left: 10%;
+  margin-top: 81px;
+  margin-bottom: 31px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,29 @@
+$logo-image:'../Images/logo.png';
+$margin-left: 10%;
+
+/*----defining mixin for the images----*/
+@mixin image-properties($width, $height, $image-path){
+    background: transparent url($image-path) 0% 0% no-repeat padding-box;
+    width:$width;
+    height:$height;
+    margin-left: $margin-left;
+}
+
+/*------styling the full page-------*/
+.page_container{
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 768px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display:flex;
+    flex-direction: column;
+}
+
+/*-----styling the logo in the form_container----*/
+.Logo {
+    @include image-properties(76px, 76px , $logo-image);
+    margin-top: 81px;
+    margin-bottom: 31px;
+}
