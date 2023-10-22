@@ -162,4 +162,107 @@ body {
   width: 583px;
   height: 768px;
   background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .page_container {
+    height: 650px;
+  }
+  .form_conatiner {
+    width: 80%;
+    height: 650px;
+  }
+  .Logo {
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  .page_header {
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    font-family: "manrope";
+    line-height: 31px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-bottom: 25px;
+  }
+  .form_questions, .form_questions_different {
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 28px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+  .form_inputs {
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    width: 400px;
+    margin-bottom: 30px;
+  }
+  .form_inputs.error {
+    margin-bottom: 5px;
+  }
+  .form_inputs.valid {
+    margin-bottom: 30px;
+  }
+  .error-message {
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #FF0000;
+    margin-left: 400px;
+  }
+  .button {
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans";
+    line-height: 30px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    padding: 12px 50px 12px 50px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+  }
+  .image_conatiner {
+    width: 450px;
+    height: 650px;
+  }
+  .page_img {
+    background: transparent url("../Images/jordan.png") 0% 0% no-repeat padding-box;
+    width: 450px;
+    height: 650px;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=index.css.map */

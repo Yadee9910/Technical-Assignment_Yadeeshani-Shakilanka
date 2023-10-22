@@ -167,3 +167,77 @@ body{
 }
 
 
+//  Adding Media query for tablet view 
+@media screen and (max-width: 1024px) {
+    @mixin boarder-properties{
+        width:400px;
+    }
+
+    .page_container{
+        $page-height:650px;
+        height: $page-height;
+    }
+    
+   .form_conatiner{
+        width: 80%;
+        $page-height:650px;
+        height:$page-height;
+    }
+
+    .Logo{     
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+
+    .page_header{
+        @include text-properties(35px, 200, $font-familyman, 31px);
+        margin-bottom: 25px;
+    }
+
+    .form_questions{
+        @include text-properties(15px, medium, $font-familyplus, 28px);    
+    }
+
+    .form_inputs{
+        @include text-properties(11px, medium, $font-familyplus, 24px);
+        @include boarder-properties;
+        $placeholder-bottom:30px;
+        margin-bottom:$placeholder-bottom;
+    }
+
+    .form_inputs.error {
+        margin-bottom: 5px;
+    }
+
+    .form_inputs.valid {
+        margin-bottom: 30px;
+    }
+
+    .error-message{
+        @include text-properties(10px, medium, $font-familyplus, 24px);
+        $mycolor: #FF0000;
+        color: $mycolor;
+        $margin-left:400px;
+        margin-left: $margin-left;    
+    }
+
+    .button{
+        @include text-properties(18px, 600, $font-familyplus, 30px);
+        padding:12px 50px 12px 50px ;
+        margin-top: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .image_conatiner{
+        width: 450px;
+        $page-height:650px;
+        height:$page-height;
+    }
+
+    .page_img{
+        @include image-properties(450px, 650px , '../Images/jordan.png');
+        background-size: cover; 
+    }    
+
+  }
+  
