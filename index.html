@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <div class="page_container">
@@ -17,18 +18,19 @@
             <div class="Logo"></div>
             <h1 class="page_header">We'd love to hear from you.</h1>
         
-            <form>
+            <form id ="myform">
                 <label class="form_questions">First Name*</label><br>
-                <input type="text" class="form_inputs" placeholder="Please type your first name"><br>
+                <input type="text" class="form_inputs" name="firstname" placeholder="Please type your first name" required><br>
 
                 <label class="form_questions">Last Name*</label><br>
-                <input type="text" class="form_inputs" placeholder="Please type your last name"><br>
+                <input type="text" class="form_inputs" name="lastname" placeholder="Please type your last name" required><br>
 
                 <label class="form_questions_different">Email Address*</label><br>
-                <input type="email" class="form_inputs" placeholder="Please type your email address"><br>
-
+                <input type="email" class="form_inputs" name="email" placeholder="Please type your email address" required><br>
+                <span id="emailError" class="error-message">Invalid email address</span>
+                
                 <label class="form_questions_different">Address*</label><br>
-                <input type="text" class="form_inputs" placeholder="Please type your address"><br>
+                <input type="text" class="form_inputs" name="address" placeholder="Please type your address" required><br>
 
                 <button type="submit" class="button">Submit</button>
             </form>
@@ -39,5 +41,7 @@
                 <div class="page_img"></div>
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

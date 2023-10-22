@@ -95,7 +95,7 @@ $page-height: 768px;
 .form_questions_different{
     @extend .form_questions;
     $label-bottom: 18px;
-    margin-bottom: $label-bottom;    
+    margin-bottom: $label-bottom; 
 }
 
 /*---styling the submit button----*/
@@ -106,6 +106,7 @@ $page-height: 768px;
     margin-top: 20px;
     margin-bottom: 80px;
     border:none;
+    cursor:pointer;
 }
 
 /*----styling the conatiner of the image---*/
@@ -114,8 +115,18 @@ $page-height: 768px;
     height:$page-height;
 }
 
-/*----styling the page image----*/
+/*------styling the page image----*/
 .page_img{
     @include image-properties(583px, 768px , '../Images/jordan.png');
     background-size: cover;
 }
+
+/*-----styling the error message shown for invalid email----*/
+.error-message{
+    @include text-properties(12px, medium, $font-familyplus, 24px);
+    $mycolor: #FF0000;
+    color: $mycolor;
+    $margin-left:464px;
+    margin-left: $margin-left;
+    display: none; /* Initially hide the error message */
+  }
