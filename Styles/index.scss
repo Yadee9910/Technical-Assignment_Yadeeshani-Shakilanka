@@ -106,8 +106,9 @@ body{
     margin-bottom:$placeholder-bottom;
 
     &::placeholder {
-        color: #DBDBDB; // Change the placeholder text color
-    }
+        color: #DBDBDB;
+        background-color: transparent; // Change the placeholder text color
+    } 
 }
 
 

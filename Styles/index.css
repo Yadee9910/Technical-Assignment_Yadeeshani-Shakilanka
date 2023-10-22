@@ -93,6 +93,7 @@ body {
 }
 .form_inputs::placeholder {
   color: #DBDBDB;
+  background-color: transparent;
 }
 
 /*--------email input with error message--------- */
