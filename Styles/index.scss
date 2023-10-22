@@ -7,7 +7,13 @@ $myOpacity:1;
 $label-bottom: 15px;
 $placeholder-bottom: 35px;
 $page-height: 768px;
+$button-background:#FFDC47;
 
+/*---reseting the default browser styles---*/
+body{
+    margin:0;
+    padding:0;
+}
 
 /*----defining mixin for the images---------*/
 @mixin image-properties($width, $height, $image-path){
@@ -44,7 +50,7 @@ $page-height: 768px;
 .page_container{
     top: 0px;
     left: 0px;
-    width: 1366px;
+    width: 100%;
     height: $page-height;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: $myOpacity;
@@ -101,12 +107,18 @@ $page-height: 768px;
 /*---styling the submit button----*/
 .button{
     @include text-properties(16px, 600, $font-familyplus, 32px);
-    background: #FFDC47 0% 0% no-repeat padding-box;
+    background: $button-background 0% 0% no-repeat padding-box;
     padding:12px 56px 12px 56px ;
     margin-top: 20px;
     margin-bottom: 80px;
     border:none;
     cursor:pointer;
+    transition: all 0.6s ease-in-out;
+
+    &:hover {
+        background: $mycolor; // Button background color on hover
+        color:#FFFFFF;
+    }
 }
 
 /*----styling the conatiner of the image---*/
@@ -117,7 +129,7 @@ $page-height: 768px;
 
 /*------styling the page image----*/
 .page_img{
-    @include image-properties(583px, 768px , '../Images/jordan.png');
+    @include image-properties(583px, 768px , '../Images/jordan.jpg');
     background-size: cover;
 }
 
@@ -129,4 +141,4 @@ $page-height: 768px;
     $margin-left:464px;
     margin-left: $margin-left;
     display: none; /* Initially hide the error message */
-  }
+}
