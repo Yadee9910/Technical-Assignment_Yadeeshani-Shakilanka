@@ -67,7 +67,12 @@ body {
   margin-bottom: 15px;
 }
 
-/*----styling the placeholders and the borders-----*/
+/*--------styling email and Address labels---------*/
+.form_questions_different {
+  margin-bottom: 18px;
+}
+
+/*-------styling the placeholders and the borders-----*/
 .form_inputs {
   font-size: 12px;
   font-style: normal;
@@ -90,12 +95,35 @@ body {
   color: #DBDBDB;
 }
 
-/*----styling email address and Address labels---*/
-.form_questions_different {
-  margin-bottom: 18px;
+/*--------email input with error message--------- */
+.form_inputs.error {
+  margin-bottom: 10px;
 }
 
-/*---styling the submit button----*/
+/*-------email input with no error message and a margin for the "Address" label---- */
+.form_inputs.valid {
+  margin-bottom: 35px; /* 35px margin for "Address" label */
+}
+
+/*-----styling the error message shown for invalid email----*/
+.error-message {
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: "Plus Jakarta Sans";
+  line-height: 24px;
+  text-align: left;
+  margin-left: 10%;
+  color: #05253C;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #FF0000;
+  margin-left: 464px;
+  display: none; /* Initially hide the error message */
+}
+
+/*--------styling the submit button---------*/
 .button {
   font-size: 16px;
   font-style: normal;
@@ -121,34 +149,16 @@ body {
   color: #FFFFFF;
 }
 
-/*----styling the conatiner of the image---*/
+/*-------styling the image container-----------*/
 .image_conatiner {
   width: 583px;
   height: 768px;
 }
 
-/*------styling the page image----*/
+/*------styling the page image--------*/
 .page_img {
-  background: transparent url("../Images/jordan.jpg") 0% 0% no-repeat padding-box;
+  background: transparent url("../Images/jordan.png") 0% 0% no-repeat padding-box;
   width: 583px;
   height: 768px;
   background-size: cover;
-}
-
-/*-----styling the error message shown for invalid email----*/
-.error-message {
-  font-size: 12px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: "Plus Jakarta Sans";
-  line-height: 24px;
-  text-align: left;
-  margin-left: 10%;
-  color: #05253C;
-  letter-spacing: 0px;
-  opacity: 1;
-  color: #FF0000;
-  margin-left: 464px;
-  display: none; /* Initially hide the error message */
 }/*# sourceMappingURL=index.css.map */

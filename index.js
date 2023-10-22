@@ -10,9 +10,11 @@
       if (!emailHasFocus) return; // Do not show error until the email input has focus
   
       if (!isValidEmail(emailInput.value)) {
+        emailInput.classList.add('error');
         emailInput.style.color = "red";
         emailErrorMessage.style.display = "block"; // Show the error message
       } else {
+        emailInput.classList.remove('error');
         emailInput.style.color = "";
         emailErrorMessage.style.display = "none"; // Hide the error message
       }
@@ -27,6 +29,7 @@
       if (!emailInput.value.trim()) {
         emailErrorMessage.style.display = "none"; // Hide the error message if the email input is empty
       }
+      emailInput.classList.add(emailInput.value.trim() ? 'valid' : 'error'); // Toggle valid or error class
     });
   
     form.addEventListener("submit", function(event) {

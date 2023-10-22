@@ -38,6 +38,7 @@ body{
     opacity: $myOpacity;
 }
 
+
 /*---defining mixin for the border properties-----*/
 @mixin boarder-properties{
     border:none;
@@ -45,6 +46,7 @@ body{
     opacity: $myOpacity;
     width: 444px;
 }
+
 
 /*------styling the full page-------------*/
 .page_container{
@@ -58,12 +60,13 @@ body{
     flex-direction: row;
 }
 
+
 /*----styling the conatiner of the form----*/
 .form_conatiner{
     width: 783px;
     height: $page-height;
-
 }
+
 
 /*-----styling the logo in the form_container----*/
 .Logo {
@@ -72,6 +75,7 @@ body{
     margin-bottom: 31px;
     margin-left: $margin-left;
 }
+
 
 /*------styling the header of the page-----*/
 .page_header{
@@ -86,7 +90,16 @@ body{
     margin-bottom:  $label-bottom; 
 }
 
-/*----styling the placeholders and the borders-----*/
+
+/*--------styling email and Address labels---------*/
+.form_questions_different{
+    @extend .form_questions;
+    $label-bottom: 18px;
+    margin-bottom: $label-bottom; 
+}
+
+
+/*-------styling the placeholders and the borders-----*/
 .form_inputs{
     @include text-properties(12px, medium, $font-familyplus, 24px);
     @include boarder-properties;
@@ -97,14 +110,31 @@ body{
     }
 }
 
-/*----styling email address and Address labels---*/
-.form_questions_different{
-    @extend .form_questions;
-    $label-bottom: 18px;
-    margin-bottom: $label-bottom; 
+
+/*--------email input with error message--------- */
+.form_inputs.error {
+    margin-bottom: 10px;
 }
 
-/*---styling the submit button----*/
+
+/*-------email input with no error message and a margin for the "Address" label---- */
+.form_inputs.valid {
+    margin-bottom: 35px; /* 35px margin for "Address" label */
+}
+
+
+/*-----styling the error message shown for invalid email----*/
+.error-message{
+    @include text-properties(12px, medium, $font-familyplus, 24px);
+    $mycolor: #FF0000;
+    color: $mycolor;
+    $margin-left:464px;
+    margin-left: $margin-left;
+    display: none; /* Initially hide the error message */
+}
+
+
+/*--------styling the submit button---------*/
 .button{
     @include text-properties(16px, 600, $font-familyplus, 32px);
     background: $button-background 0% 0% no-repeat padding-box;
@@ -121,24 +151,18 @@ body{
     }
 }
 
-/*----styling the conatiner of the image---*/
+
+/*-------styling the image container-----------*/
 .image_conatiner{
     width: 583px;
     height:$page-height;
 }
 
-/*------styling the page image----*/
+
+/*------styling the page image--------*/
 .page_img{
-    @include image-properties(583px, 768px , '../Images/jordan.jpg');
-    background-size: cover;
+    @include image-properties(583px, 768px , '../Images/jordan.png');
+    background-size: cover; 
 }
 
-/*-----styling the error message shown for invalid email----*/
-.error-message{
-    @include text-properties(12px, medium, $font-familyplus, 24px);
-    $mycolor: #FF0000;
-    color: $mycolor;
-    $margin-left:464px;
-    margin-left: $margin-left;
-    display: none; /* Initially hide the error message */
-}
+
