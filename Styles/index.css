@@ -166,11 +166,11 @@ body {
 
 @media screen and (max-width: 1024px) {
   .page_container {
-    height: 650px;
+    height: 100vh;
   }
   .form_conatiner {
     width: 80%;
-    height: 650px;
+    height: 100vh;
   }
   .Logo {
     margin-top: 45px;
@@ -254,15 +254,108 @@ body {
     padding: 12px 50px 12px 50px;
     margin-top: 18px;
     margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
   }
   .image_conatiner {
     width: 450px;
-    height: 650px;
+    height: 100vh;
   }
   .page_img {
     background: transparent url("../Images/jordan.png") 0% 0% no-repeat padding-box;
     width: 450px;
     height: 650px;
     background-size: cover;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .page_container {
+    flex-direction: column;
+  }
+  .form_conatiner {
+    width: 100%;
+  }
+  .Logo {
+    margin-top: 42px;
+    margin-bottom: 27px;
+  }
+  .page_header {
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    font-family: "manrope";
+    line-height: 30px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-bottom: 25px;
+  }
+  .form_questions, .form_questions_different {
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 28px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+  .form_inputs {
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    width: 470px;
+  }
+  .error-message {
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #FF0000;
+    margin-left: 470px;
+  }
+  .button {
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans";
+    line-height: 32px;
+    text-align: left;
+    margin-left: 10%;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    padding: 12px 45px 12px 45px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+  .button:hover {
+    background: #05253C;
+    color: #FFFFFF;
+  }
+  .image_conatiner {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

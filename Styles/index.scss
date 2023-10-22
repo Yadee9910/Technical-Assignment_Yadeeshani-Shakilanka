@@ -167,20 +167,20 @@ body{
 }
 
 
-//  Adding Media query for tablet view 
+//  Adding Media query for mobile and tablet view 
 @media screen and (max-width: 1024px) {
     @mixin boarder-properties{
         width:400px;
     }
 
     .page_container{
-        $page-height:650px;
+        $page-height:100vh;
         height: $page-height;
     }
     
    .form_conatiner{
         width: 80%;
-        $page-height:650px;
+        $page-height:100vh;
         height:$page-height;
     }
 
@@ -226,11 +226,13 @@ body{
         padding:12px 50px 12px 50px ;
         margin-top: 18px;
         margin-bottom: 15px;
+        cursor:pointer;
+        transition: all 0.6s ease-in-out;
     }
     
     .image_conatiner{
         width: 450px;
-        $page-height:650px;
+        $page-height:100vh;
         height:$page-height;
     }
 
@@ -240,4 +242,64 @@ body{
     }    
 
   }
+
+
+  
+  @media screen and (max-width: 1024px){
+    @mixin boarder-properties{
+        width:470px;
+    }
+
+    .page_container{
+        flex-direction: column;
+    }
+
+    .form_conatiner{
+        width: 100%;
+    }
+
+    .Logo{     
+        margin-top: 42px;
+        margin-bottom: 27px;
+    }
+
+    .page_header{
+        @include text-properties(40px, 200, $font-familyman, 30px);
+        margin-bottom: 25px;
+    }
+
+    .form_questions{
+        @include text-properties(17px, medium, $font-familyplus, 28px);    
+    }
+
+    .form_inputs{
+        @include text-properties(12px, medium, $font-familyplus, 24px);
+        @include boarder-properties;       
+    }
+
+    .error-message{
+        @include text-properties(12px, medium, $font-familyplus, 24px);
+        $mycolor: #FF0000;
+        color: $mycolor;
+        $margin-left:470px;
+        margin-left: $margin-left;    
+    }
+
+    .button{
+        @include text-properties(20px, 600, $font-familyplus, 32px);
+        padding:12px 45px 12px 45px ;
+        cursor:pointer;
+        transition: all 0.6s ease-in-out;
+
+        &:hover {
+            background: $mycolor; 
+            color:#FFFFFF;
+        }
+    }
+
+    .image_conatiner{
+        display: none;
+    }
+  }
+  
   
