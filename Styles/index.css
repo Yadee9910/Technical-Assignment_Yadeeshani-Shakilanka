@@ -32,7 +32,7 @@ body {
   height: 76px;
   margin-top: 81px;
   margin-bottom: 31px;
-  margin-left: 10%;
+  margin-left: 139px;
 }
 
 /*------styling the header of the page-----*/
@@ -44,7 +44,7 @@ body {
   font-family: "manrope";
   line-height: 52px;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 139px;
   color: #05253C;
   letter-spacing: 0px;
   opacity: 1;
@@ -60,7 +60,7 @@ body {
   font-family: "Plus Jakarta Sans";
   line-height: 28px;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 139px;
   color: #05253C;
   letter-spacing: 0px;
   opacity: 1;
@@ -81,7 +81,7 @@ body {
   font-family: "Plus Jakarta Sans";
   line-height: 24px;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 139px;
   color: #05253C;
   letter-spacing: 0px;
   opacity: 1;
@@ -101,9 +101,13 @@ body {
   margin-bottom: 10px;
 }
 
-/*-------email input with no error message and a margin for the "Address" label---- */
-.form_inputs.valid {
-  margin-bottom: 35px; /* 35px margin for "Address" label */
+/* Add hover effect for placeholder */
+#myform input::placeholder {
+  transition: top 0.3s, font-size 0.3s;
+}
+#myform input:hover::placeholder {
+  top: -10px;
+  font-size: 14px;
 }
 
 /*-----styling the error message shown for invalid email----*/
@@ -115,7 +119,7 @@ body {
   font-family: "Plus Jakarta Sans";
   line-height: 24px;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 139px;
   color: #05253C;
   letter-spacing: 0px;
   opacity: 1;
@@ -133,7 +137,7 @@ body {
   font-family: "Plus Jakarta Sans";
   line-height: 32px;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 139px;
   color: #05253C;
   letter-spacing: 0px;
   opacity: 1;
@@ -184,7 +188,7 @@ body {
     font-family: "manrope";
     line-height: 31px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -198,7 +202,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 28px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -211,7 +215,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 24px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -221,9 +225,6 @@ body {
   .form_inputs.error {
     margin-bottom: 5px;
   }
-  .form_inputs.valid {
-    margin-bottom: 30px;
-  }
   .error-message {
     font-size: 10px;
     font-style: normal;
@@ -232,7 +233,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 24px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -247,7 +248,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 30px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -268,7 +269,7 @@ body {
     background-size: cover;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .page_container {
     flex-direction: column;
   }
@@ -287,7 +288,7 @@ body {
     font-family: "manrope";
     line-height: 30px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -301,7 +302,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 28px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -314,7 +315,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 24px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -328,7 +329,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 24px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -343,7 +344,7 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 32px;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 139px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
@@ -357,5 +358,128 @@ body {
   }
   .image_conatiner {
     display: none;
+  }
+}
+@media screen and (max-width: 590px) {
+  .Logo {
+    margin-top: 40px;
+    margin-bottom: 27px;
+  }
+  .page_header {
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    font-family: "manrope";
+    line-height: 28px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-bottom: 25px;
+  }
+  .form_questions, .form_questions_different {
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 27px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+  .form_inputs {
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    width: 380px;
+  }
+  .error-message {
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #FF0000;
+    margin-left: 380px;
+  }
+  .button {
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-family: "Plus Jakarta Sans";
+    line-height: 32px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    padding: 10px 35px 10px 35px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+  }
+}
+@media screen and (max-width: 523px) {
+  .page_header {
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    font-family: "manrope";
+    line-height: 28px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-bottom: 25px;
+  }
+  .form_inputs {
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    width: 250px;
+  }
+  .error-message {
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: "Plus Jakarta Sans";
+    line-height: 24px;
+    text-align: left;
+    margin-left: 139px;
+    color: #05253C;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #FF0000;
+    margin-left: 250px;
   }
 }/*# sourceMappingURL=index.css.map */

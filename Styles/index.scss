@@ -2,7 +2,7 @@ $mycolor:#05253C;
 $font-familyman: 'manrope';
 $font-familyplus: 'Plus Jakarta Sans';
 $logo-image:'../Images/logo.png';
-$margin-left: 10%;
+$margin-left: 139px;
 $myOpacity:1;
 $label-bottom: 15px;
 $placeholder-bottom: 35px;
@@ -117,11 +117,21 @@ body{
     margin-bottom: 10px;
 }
 
+/* Add hover effect for placeholder */
+#myform {
+    input {
+      &::placeholder {
+        transition: top 0.3s, font-size 0.3s;
+      }
+  
+      &:hover::placeholder {
+        top: -10px;
+        font-size: 14px;
+      }
+    }
+  }
+  
 
-/*-------email input with no error message and a margin for the "Address" label---- */
-.form_inputs.valid {
-    margin-bottom: 35px; /* 35px margin for "Address" label */
-}
 
 
 /*-----styling the error message shown for invalid email----*/
@@ -209,9 +219,7 @@ body{
         margin-bottom: 5px;
     }
 
-    .form_inputs.valid {
-        margin-bottom: 30px;
-    }
+  
 
     .error-message{
         @include text-properties(10px, medium, $font-familyplus, 24px);
@@ -240,12 +248,11 @@ body{
         @include image-properties(450px, 650px , '../Images/jordan.png');
         background-size: cover; 
     }    
-
   }
 
 
   
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 768px){
     @mixin boarder-properties{
         width:470px;
     }
@@ -301,5 +308,67 @@ body{
         display: none;
     }
   }
+
+
+  @media screen and (max-width: 590px){
+    @mixin boarder-properties{
+        width:380px;
+    }
+
+    .Logo{     
+        margin-top: 40px;
+        margin-bottom: 27px;
+    }
+
+    .page_header{
+        @include text-properties(40px, 200, $font-familyman, 28px);
+        margin-bottom: 25px;
+    }
+
+    .form_questions{
+        @include text-properties(15px, medium, $font-familyplus, 27px);    
+    }
+
+    .form_inputs{
+        @include text-properties(11px, medium, $font-familyplus, 24px);
+        @include boarder-properties;       
+    }
+
+    .error-message{
+        @include text-properties(11px, medium, $font-familyplus, 24px);
+        $mycolor: #FF0000;
+        color: $mycolor;
+        $margin-left:380px;
+        margin-left: $margin-left;    
+    }
+    .button{
+        @include text-properties(20px, 600, $font-familyplus, 32px);
+        padding:10px 35px 10px 35px ;
+        cursor:pointer;
+        transition: all 0.6s ease-in-out;
+    }
+  }
   
-  
+  @media screen and (max-width: 523px){
+    @mixin boarder-properties{
+        width:250px;
+    }
+
+    .page_header{
+        @include text-properties(35px, 200, $font-familyman, 28px);
+        margin-bottom: 25px;
+    }
+
+    .form_inputs{
+        @include text-properties(11px, medium, $font-familyplus, 24px);
+        @include boarder-properties;       
+    }
+
+    .error-message{
+        @include text-properties(11px, medium, $font-familyplus, 24px);
+        $mycolor: #FF0000;
+        color: $mycolor;
+        $margin-left:250px;
+        margin-left: $margin-left;    
+    }
+}
