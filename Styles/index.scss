@@ -195,7 +195,7 @@ body{
     }
     
    .form_conatiner{
-        width: 45%;
+        width: 68%;
         $page-height:100vh;
         height:$page-height;
         
@@ -234,7 +234,6 @@ body{
         margin-bottom: 15px;
     }
 
-  
 
     .error-message{
         @include text-properties(10px, medium, $font-familyplus, 24px);
@@ -374,6 +373,8 @@ body{
         transition: all 0.6s ease-in-out;
     }
   }
+
+
   
   @media screen and (max-width: 523px){
     @mixin boarder-properties{
