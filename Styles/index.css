@@ -453,19 +453,26 @@ body {
   }
 }
 @media screen and (max-width: 523px) {
+  .Logo {
+    margin-left: 80px;
+  }
   .page_header {
     font-size: 35px;
     font-style: normal;
     font-variant: normal;
     font-weight: 200;
     font-family: "manrope";
-    line-height: 28px;
+    line-height: 35px;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 80px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
     margin-bottom: 25px;
+    margin-left: 80px;
+  }
+  .form_questions, .form_questions_different {
+    margin-left: 80px;
   }
   .form_inputs {
     font-size: 11px;
@@ -475,12 +482,12 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 24px;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 80px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
     width: 250px;
-    margin-left: 100px;
+    margin-left: 80px;
   }
   .error-message {
     font-size: 11px;
@@ -490,11 +497,14 @@ body {
     font-family: "Plus Jakarta Sans";
     line-height: 24px;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 80px;
     color: #05253C;
     letter-spacing: 0px;
     opacity: 1;
     color: #FF0000;
     margin-left: 250px;
+  }
+  .button {
+    margin-left: 80px;
   }
 }/*# sourceMappingURL=index.css.map */

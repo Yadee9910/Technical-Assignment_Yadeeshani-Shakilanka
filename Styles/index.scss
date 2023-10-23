@@ -381,15 +381,28 @@ body{
         width:250px;
     }
 
+    .Logo{
+        $margin-left: 80px !global;
+        margin-left: $margin-left;  
+    }
+
+    
     .page_header{
-        @include text-properties(35px, 200, $font-familyman, 28px);
+        @include text-properties(35px, 200, $font-familyman, 35px);
         margin-bottom: 25px;
+        $margin-left: 80px;
+        margin-left: $margin-left;
+    }
+
+    .form_questions{
+        $margin-left: 80px !global;
+        margin-left: $margin-left;  
     }
 
     .form_inputs{
         @include text-properties(11px, medium, $font-familyplus, 24px);
         @include boarder-properties;  
-        $margin-left: 100px !global;
+        $margin-left: 80px !global;
         margin-left: $margin-left;        
     }
 
@@ -400,5 +413,11 @@ body{
         $margin-left:250px;
         margin-left: $margin-left;    
     }
+
+    .button{
+        $margin-left: 80px !global;
+        margin-left: $margin-left;  
+    }
+  
 }
 
