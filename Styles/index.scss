@@ -178,246 +178,244 @@ body{
 
 //  Adding Media query for mobile and tablet view 
 @media screen and (max-width: 1024px) {
-    
-    @mixin boarder-properties{
-        width:400px;
-    }
+        @mixin boarder-properties{
+            width:400px;
+        }
 
-    body {
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    .page_container{
-        width:100%;
-        $page-height:auto;
-        height: $page-height;
-    }
-    
-   .form_conatiner{
-        width: 68%;
-        $page-height:100vh;
-        height:$page-height;
+        .page_container{
+            width:100%;
+            $page-height:auto;
+            height: $page-height;
+        }
         
-    }
+    .form_conatiner{
+            width: 68%;
+            $page-height:100vh;
+            height:$page-height;
+            
+        }
 
-    .Logo{     
-        margin-top: 45px;
-        margin-bottom: 20px;
-        $margin-left:100px;
-        margin-left: $margin-left;
-    }
+        .Logo{     
+            margin-top: 45px;
+            margin-bottom: 20px;
+            $margin-left:100px;
+            margin-left: $margin-left;
+        }
 
-    .page_header{
-        @include text-properties(35px, 200, $font-familyman, 31px);
-        margin-bottom: 25px;
-        $margin-left:100px;
-        margin-left: $margin-left;
-    }
+        .page_header{
+            @include text-properties(35px, 200, $font-familyman, 31px);
+            margin-bottom: 25px;
+            $margin-left:100px;
+            margin-left: $margin-left;
+        }
 
-    .form_questions{
-        @include text-properties(15px, medium, $font-familyplus, 28px);    
-        $margin-left:100px;
-        margin-left: $margin-left;
-    }
+        .form_questions{
+            @include text-properties(15px, medium, $font-familyplus, 28px);    
+            $margin-left:100px;
+            margin-left: $margin-left;
+        }
 
-    .form_inputs{
-        @include text-properties(11px, medium, $font-familyplus, 24px);
-        @include boarder-properties;
-        $placeholder-bottom:30px;
-        margin-bottom:$placeholder-bottom;
-        $margin-left:100px;
-        margin-left: $margin-left;
-    }
+        .form_inputs{
+            @include text-properties(11px, medium, $font-familyplus, 24px);
+            @include boarder-properties;
+            $placeholder-bottom:30px;
+            margin-bottom:$placeholder-bottom;
+            $margin-left:100px;
+            margin-left: $margin-left;
+        }
 
-    .form_inputs.error {
-        margin-bottom: 15px;
-    }
+        .form_inputs.error {
+            margin-bottom: 15px;
+        }
 
 
-    .error-message{
-        @include text-properties(10px, medium, $font-familyplus, 24px);
-        $mycolor: #FF0000;
-        color: $mycolor;
-        $margin-left:400px;
-        margin-left: $margin-left;    
-    }
+        .error-message{
+            @include text-properties(10px, medium, $font-familyplus, 24px);
+            $mycolor: #FF0000;
+            color: $mycolor;
+            $margin-left:400px;
+            margin-left: $margin-left;    
+        }
 
-    .button{
-        @include text-properties(18px, 600, $font-familyplus, 30px);
-        padding:12px 50px 12px 50px ;
-        margin-top: 18px;
-        margin-bottom: 15px;
-        cursor:pointer;
-        transition: all 0.6s ease-in-out;
-        $margin-left:100px;
-        margin-left: $margin-left;
-    }
-    
-    .image_conatiner{
-        width: 560px;
-        $page-height:100vh;
-        height:$page-height;
-    }
+        .button{
+            @include text-properties(18px, 600, $font-familyplus, 30px);
+            padding:12px 50px 12px 50px ;
+            margin-top: 18px;
+            margin-bottom: 15px;
+            cursor:pointer;
+            transition: all 0.6s ease-in-out;
+            $margin-left:100px;
+            margin-left: $margin-left;
+        }
+        
+        .image_conatiner{
+            width: 560px;
+            $page-height:100vh;
+            height:$page-height;
+        }
 
-    .page_img{
-        @include image-properties(460px, 650px , '../Images/jordan.png');
-        background-size: cover; 
-    }    
+        .page_img{
+            @include image-properties(460px, 650px , '../Images/jordan.png');
+            background-size: cover; 
+        }    
   }
 
 
   
   @media screen and (max-width: 768px){
-    @mixin boarder-properties{
-        width:470px;
-    }
-
-    .page_container{
-        flex-direction: column;
-    }
-
-    .form_conatiner{
-        width: 100%;
-        
-    }
-
-    .Logo{     
-        margin-top: 42px;
-        margin-bottom: 27px;
-    }
-
-    .page_header{
-        @include text-properties(40px, 200, $font-familyman, 30px);
-        margin-bottom: 25px;
-        $margin-left: 100px;
-        margin-left: $margin-left;
-    }
-
-    .form_questions{
-        @include text-properties(17px, medium, $font-familyplus, 28px);    
-        $margin-left: 100px !global;
-        margin-left: $margin-left;
-    }
-
-    .form_inputs{
-        @include text-properties(12px, medium, $font-familyplus, 24px);
-        @include boarder-properties;
-        $margin-left: 100px;
-        margin-left: $margin-left;       
-    }
-
-    .error-message{
-        @include text-properties(12px, medium, $font-familyplus, 24px);
-        $mycolor: #FF0000;
-        color: $mycolor;
-        $margin-left:470px;
-        margin-left: $margin-left;    
-    }
-
-    .button{
-        @include text-properties(20px, 600, $font-familyplus, 32px);
-        padding:12px 45px 12px 45px ;
-        cursor:pointer;
-        transition: all 0.6s ease-in-out;
-        $margin-left: 100px;
-        margin-left: $margin-left;
-
-        &:hover {
-            background: $mycolor; 
-            color:#FFFFFF;
+        @mixin boarder-properties{
+            width:470px;
         }
-    }
 
-    .image_conatiner{
-        display: none;
-    }
+        .page_container{
+            flex-direction: column;
+        }
+
+        .form_conatiner{
+            width: 100%;
+            
+        }
+
+        .Logo{     
+            margin-top: 42px;
+            margin-bottom: 27px;
+        }
+
+        .page_header{
+            @include text-properties(40px, 200, $font-familyman, 30px);
+            margin-bottom: 25px;
+            $margin-left: 100px;
+            margin-left: $margin-left;
+        }
+
+        .form_questions{
+            @include text-properties(17px, medium, $font-familyplus, 28px);    
+            $margin-left: 100px !global;
+            margin-left: $margin-left;
+        }
+
+        .form_inputs{
+            @include text-properties(12px, medium, $font-familyplus, 24px);
+            @include boarder-properties;
+            $margin-left: 100px;
+            margin-left: $margin-left;       
+        }
+
+        .error-message{
+            @include text-properties(12px, medium, $font-familyplus, 24px);
+            $mycolor: #FF0000;
+            color: $mycolor;
+            $margin-left:470px;
+            margin-left: $margin-left;    
+        }
+
+        .button{
+            @include text-properties(20px, 600, $font-familyplus, 32px);
+            padding:12px 45px 12px 45px ;
+            cursor:pointer;
+            transition: all 0.6s ease-in-out;
+            $margin-left: 100px;
+            margin-left: $margin-left;
+
+            &:hover {
+                background: $mycolor; 
+                color:#FFFFFF;
+            }
+        }
+
+        .image_conatiner{
+            display: none;
+        }
   }
 
 
   @media screen and (max-width: 590px){
-    @mixin boarder-properties{
-        width:380px;
-    }
+        @mixin boarder-properties{
+            width:380px;
+        }
 
-    .Logo{     
-        margin-top: 40px;
-        margin-bottom: 27px;
-    }
+        .Logo{     
+            margin-top: 40px;
+            margin-bottom: 27px;
+        }
 
-    .page_header{
-        @include text-properties(40px, 200, $font-familyman, 28px);
-        margin-bottom: 25px;
-    }
+        .page_header{
+            @include text-properties(40px, 200, $font-familyman, 28px);
+            margin-bottom: 25px;
+        }
 
-    .form_questions{
-        @include text-properties(15px, medium, $font-familyplus, 27px);    
-    }
+        .form_questions{
+            @include text-properties(15px, medium, $font-familyplus, 27px);    
+        }
 
-    .form_inputs{
-        @include text-properties(11px, medium, $font-familyplus, 24px);
-        @include boarder-properties;       
-    }
+        .form_inputs{
+            @include text-properties(11px, medium, $font-familyplus, 24px);
+            @include boarder-properties;       
+        }
 
-    .error-message{
-        @include text-properties(11px, medium, $font-familyplus, 24px);
-        $mycolor: #FF0000;
-        color: $mycolor;
-        $margin-left:380px;
-        margin-left: $margin-left;    
-    }
-    .button{
-        @include text-properties(20px, 600, $font-familyplus, 32px);
-        padding:10px 35px 10px 35px ;
-        cursor:pointer;
-        transition: all 0.6s ease-in-out;
-    }
+        .error-message{
+            @include text-properties(11px, medium, $font-familyplus, 24px);
+            $mycolor: #FF0000;
+            color: $mycolor;
+            $margin-left:380px;
+            margin-left: $margin-left;    
+        }
+        .button{
+            @include text-properties(20px, 600, $font-familyplus, 32px);
+            padding:10px 35px 10px 35px ;
+            cursor:pointer;
+            transition: all 0.6s ease-in-out;
+        }
   }
 
 
   
   @media screen and (max-width: 523px){
-    @mixin boarder-properties{
-        width:250px;
-    }
+        @mixin boarder-properties{
+            width:250px;
+        }
 
-    .Logo{
-        $margin-left: 80px !global;
-        margin-left: $margin-left;  
-    }
-
+        .Logo{
+            $margin-left: 80px !global;
+            margin-left: $margin-left;  
+        }
     
-    .page_header{
-        @include text-properties(35px, 200, $font-familyman, 35px);
-        margin-bottom: 25px;
-        $margin-left: 80px;
-        margin-left: $margin-left;
-    }
+        .page_header{
+            @include text-properties(35px, 200, $font-familyman, 35px);
+            margin-bottom: 25px;
+            $margin-left: 80px;
+            margin-left: $margin-left;
+        }
 
-    .form_questions{
-        $margin-left: 80px !global;
-        margin-left: $margin-left;  
-    }
+        .form_questions{
+            $margin-left: 80px !global;
+            margin-left: $margin-left;  
+        }
 
-    .form_inputs{
-        @include text-properties(11px, medium, $font-familyplus, 24px);
-        @include boarder-properties;  
-        $margin-left: 80px !global;
-        margin-left: $margin-left;        
-    }
+        .form_inputs{
+            @include text-properties(11px, medium, $font-familyplus, 24px);
+            @include boarder-properties;  
+            $margin-left: 80px !global;
+            margin-left: $margin-left;        
+        }
 
-    .error-message{
-        @include text-properties(11px, medium, $font-familyplus, 24px);
-        $mycolor: #FF0000;
-        color: $mycolor;
-        $margin-left:250px;
-        margin-left: $margin-left;    
-    }
+        .error-message{
+            @include text-properties(11px, medium, $font-familyplus, 24px);
+            $mycolor: #FF0000;
+            color: $mycolor;
+            $margin-left:250px;
+            margin-left: $margin-left;    
+        }
 
-    .button{
-        $margin-left: 80px !global;
-        margin-left: $margin-left;  
-    }
+        .button{
+            $margin-left: 80px !global;
+            margin-left: $margin-left;  
+        }
   
 }
 
